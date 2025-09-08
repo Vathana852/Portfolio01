@@ -1,0 +1,176 @@
+/* Navbar.css */
+
+@import "tailwindcss";
+:root {
+  --brand-color1: #ffb703;
+}
+
+.brand-color1 {
+  color: var(--brand-color1);
+}
+
+.brand-bg1{
+    background-color: var(--brand-color1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  background-color: #243037;
+  width: 100%;
+  height: 90px;
+  position: fixed;    /* Make navbar fixed */
+  top: 0;             /* Stick to top */
+  left: 0;
+
+}
+
+.navbar-container {
+  max-width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+
+}
+.navbar-menu li {
+  list-style: none;
+  display: inline;
+  padding: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #d3ddde;
+  transition: color 0.3s;
+  
+}
+
+.navbar-menu a:hover {
+  color: var(--brand-color1);
+}
+
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.menu-icon .bar.open:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.menu-icon .bar.open:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+
+/* MOBILE MENU TRANSITION */
+@media (max-width: 800px) {
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+  .navbar-container {
+    padding: 0 20px;
+    position: relative; 
+  }
+
+  .navbar-menu {
+    position: absolute;      
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+    flex-direction: column;
+    width: 100%;
+    background-color: #243037;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+  }
+
+  .navbar-menu.open {
+    max-height: 500px; /* enough to show all items */
+  }
+
+  .navbar-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-menu li {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .navbar-menu li a {
+    display: block;
+  }
+
+  .navbar-lang {
+    margin-left: auto;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+}
+/* Mobile styles (max-width: 500px) */
+@media (max-width: 500px) {
+
+  .navbar-logo img {
+    height: 50px;
+  }
+
+  .navbar-menu {
+    font-size: 13px;
+  }
+
+  .navbar-menu li {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .menu-icon .bar {
+    width: 20px;
+    height: 2.5px;
+  }
+
+  .navbar-lang {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+}
