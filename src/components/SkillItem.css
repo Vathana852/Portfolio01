@@ -1,0 +1,10 @@
+
+@media (max-width: 1536px) {
+    .skillItem-Container{
+        padding: 1rem;
+    }
+    .skillName{
+       font-size: 80%;
+
+    }
+}    

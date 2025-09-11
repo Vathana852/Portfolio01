@@ -37,7 +37,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px
 }
 .navbar-logo{
   padding: 10px;
@@ -60,7 +59,7 @@ body {
 
 .navbar-menu a {
   text-decoration: none;
-  color: #d3ddde;
+  color: #ffffff;
   transition: color 0.3s;
   
 }
@@ -70,6 +69,7 @@ body {
 }
 
 /* Hamburger Icon */
+
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -79,7 +79,7 @@ body {
 
 .menu-icon .bar {
   width: 25px;
-  height: 3px;
+  height: 5px;
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -106,11 +106,11 @@ body {
     display: none;
   }
   .navbar-container {
-    padding: 0 20px;
+    padding: 0 10px;
     position: relative; 
   }
 
-  .navbar-menu {
+.navbar-menu {
     position: absolute;      
     top: 100%;
     left: 0;
@@ -118,22 +118,27 @@ body {
     z-index: 1000;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.4s ease-in-out;
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
     flex-direction: column;
     width: 100%;
     background-color: #243037;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Optional: subtle shadow */
-  }
+    border-top: 1px solid #444;
+}
 
-  .navbar-menu.open {
+.navbar-menu.open {
     max-height: 500px; /* enough to show all items */
-  }
+    opacity: 1;
+}
 
   .navbar-menu ul {
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
+
   }
 
   .navbar-menu li {

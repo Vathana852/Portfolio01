@@ -30,7 +30,7 @@ const AboutScreen = () => {
             </h2>
 
             <div className="max-w-4xl mx-auto text-center">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+              <div className="skillIteam grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                 {skills.map((skill, index) => (
                   <SkillItem key={index} icon={skill.icon} name={skill.name} />
                 ))}
