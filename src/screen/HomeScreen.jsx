@@ -2,6 +2,7 @@ import React from 'react'
 import'./style/HomeScreenStyle.css'
 import heroImage from '../assets/Hero_Profile.JPG'
 import TypingLoop from '../components/TypingLoop'
+import '../components/Animation.css'
 
 // Icon
 import { FaFacebookSquare } from "react-icons/fa";
@@ -16,11 +17,12 @@ const HomeScreen = () => {
 
   const imageTop = heroImage;
   return (
-
-    <div className="container mx-auto px-4 py-8" >
+    
+    <div className="container mx-auto px-4 py-8 autoShow" >
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Section */}
-          <div className="flex-1 custom-left flex flex-col justify-center ">
+        
+          <div className="leftBox flex flex-col justify-center ">
             <div className="text-section custom-box px-6">
               <h5 className="intro-text">I'am</h5>
               <h1 className="name">YON VATHANA</h1>
@@ -85,16 +87,17 @@ const HomeScreen = () => {
 
         {/* Right Section */}
 
-        <div className="flex-1 custom-right ">
-                 <img 
+
+        <div className="flex-1 custom-right">
+            <img 
                  className='rounded-lg'
                  src={heroImage} alt="about hero" 
-                 />
+              />
+
+                 
         </div>
 
       </div>
-
-
 
 
     </div>

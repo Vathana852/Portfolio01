@@ -1,8 +1,9 @@
 import React from 'react';
 import './style/AboutScreenStyle.css';
+import '../components/Responsive.css'
 import Skills from '../components/SkillProcess';
 import SkillItem from '../components/SkillItem'; // Import the SkillItem component
-
+import '../components/Animation.css'
 const AboutScreen = () => {
   const skills = [
     { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', name: 'HTML5' },
@@ -20,23 +21,22 @@ const AboutScreen = () => {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto autoShow">
       <div className="flex flex-col md:flex-row gap-6">
-        {/* Left Box */}
+          {/* Left Box */}
         <div className="md:w-1/2 py-6 px-4 text-white ">
-          <h2 className="text-3xl font-bold text-center mb-6">
-            ABOUT <span className="brand-color1">ME</span>
-          </h2>
+            <h2 className="text-3xl font-bold text-center mb-6">
+              ABOUT <span className="brand-color1">ME</span>
+            </h2>
 
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-              {skills.map((skill, index) => (
-                <SkillItem key={index} icon={skill.icon} name={skill.name} />
-              ))}
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                {skills.map((skill, index) => (
+                  <SkillItem key={index} icon={skill.icon} name={skill.name} />
+                ))}
+              </div>
             </div>
-          </div>
         </div>
-
         {/* Right Box */}
         <div className="md:w-1/2 p-4">
           <Skills />

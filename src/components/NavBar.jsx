@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './NavBarStyle.css'
-import logo from '../assets/logo/DesignCode02.png'
+import logo from '../assets/logo/SmallLogo-04-04.png'
 
 
 const designCode = logo;
@@ -25,7 +25,7 @@ const NavBar = (props) => {
             <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
             <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
             <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-        </div>
+          </div>
 
         {/* Menu Items */}
           <div className={`navbar-menu ${menuOpen ? 'open' : 'desktop-menu'}`}>

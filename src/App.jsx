@@ -14,7 +14,6 @@ function App() {
   return (
         <BrowserRouter>
             <NavBar />
-
             <div style={{ marginTop: '110px' }}>
                 <Routes>
                     <Route path='/' element={<MainScreen />} />
