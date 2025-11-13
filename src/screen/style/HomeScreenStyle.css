@@ -1,9 +1,17 @@
-@import "tailwindcss";
-
-body {
-  background-color: #1e2329;
+.homescreen-container {
+  width: 100%;                 /* full width so background spans edge-to-edge */
+  background-color: #1e2329;   /* full-bleed background */
+  box-sizing: border-box;
 }
 
+/* constrain inner content to 1200px and keep existing padding/text styles */
+.homescreen-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  
+}
 
 
 .intro-text {
@@ -14,6 +22,7 @@ body {
 .name {
   color: #ffffff;
   font-size: 42px;
+  font-weight: bold;
 }
 
 .profession {
@@ -72,4 +81,54 @@ body {
 .custom-box {
   width: 500px; /* Set the desired width */
   margin: 0 auto; /* Center the box horizontally */
+}
+
+.social-icons a:hover {
+  color: #fdc101;
+  transform: scale(1.2);
+  transition: color 0.3s, transform 0.3s;
+}
+
+@media (max-width: 880px) {
+  .name {
+    font-size: 32px;
+  }
+
+  .profession {
+    font-size: 20px;
+  }
+
+  .custom-box {
+    width: 100%; /* Full width on smaller screens */
+    padding: 0 10px; /* Optional padding */
+  }
+  .btn-primary{
+    width: 180px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .btn-outline{
+    width: 180px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .custom-right {
+    margin-top: 20px; /* Add space above the image */
+  }
+  
+}
+
+
+/* other styles remain the same - adjust selectors that previously targeted .homescreen-container to .homescreen-inner if needed */
+.intro-text { color: #ffb703; font-size: 14px; }
+.name { color: #ffffff; font-size: 42px; font-weight: bold; }
+.profession { font-size: 24px; color: #ffb703; }
+/* ...existing code... */
+@media (max-width: 880px) {
+  .name { font-size: 32px; }
+  .profession { font-size: 20px; }
+  .homescreen-inner { width: 100%; padding: 2.5rem 1rem; }
+  .btn-primary{ width: 180px; height: 45px; font-size: 12px; }
+  .btn-outline{ width: 180px; height: 45px; font-size: 12px; }
+  .custom-right { margin-top: 20px; }
 }

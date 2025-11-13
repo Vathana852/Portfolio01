@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './NavBarStyle.css'
-import logo from '../assets/logo/SmallLogo-04-04.png'
+import logo from '../assets/logo/Vath-Logo-Version2.png'
 
 
 const designCode = logo;
@@ -39,6 +39,9 @@ const NavBar = (props) => {
               </li>
               <li onClick={() => setMenuOpen(false)}>
                 <NavLink to="/service" className={({ isActive }) => isActive ? "active-menu" : ""}>Service</NavLink>
+              </li>
+              <li onClick={() => setMenuOpen(false)}>
+                <NavLink to="/Experience" className={({ isActive }) => isActive ? "active-menu" : ""}>Experience</NavLink>
               </li>
               {props.children}
             </ul>

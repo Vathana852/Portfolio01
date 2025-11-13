@@ -1,13 +1,91 @@
-@import "tailwindcss";
-.container {
-    max-width: 1220px;
-    padding: 20px;
+/* General container and typography */
+.services-container {
+  padding: 4rem 2rem;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ffffff;
 }
 
-@media (max-width: 760px) {
-   .serviceTitle button{
-        margin-top: 20px;
-        font-size: 90%;
-        width: 80%;
-   }
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #243037;
+  margin-bottom: 4rem;
 }
+.services-title span {
+  color : #ffb703;
+}
+
+.services-subtitle {
+  font-size: 1.5rem;
+  color: #243037;
+
+}
+.services-subtitle span {
+  color : #ffb703;
+}
+/* Services grid layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual service card styling */
+.service-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon and icon wrapper */
+.icon-wrapper {
+  background-color: #e8f5e9;
+  border-radius: 50%;
+  padding: 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service-icon {
+  color: #388e3c;
+  font-size: 2.5rem;
+}
+
+/* Card content */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffb703;
+  margin-bottom: 0.5rem;  
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #243037;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card-arrow {
+  font-size: 1.5rem;
+  color: #ffb703;
+  margin-top: auto;
+}
+

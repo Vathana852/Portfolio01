@@ -1,0 +1,322 @@
+
+.experience-header {
+padding: 50px 0 50px 0;
+}
+.experience-header h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+}
+
+.experience-header h1 span {
+  color: #FDC101;
+}
+
+.experience-header p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.experience-header p span {
+  color: #FDC101;
+  font-weight: 800;
+}
+/* keep icon + text together on one line */
+.inline-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 16px;
+  white-space: nowrap; /* prevents line break between icon and its text */
+}
+
+.inline-text {
+  color: #ffffff; /* adjust as needed */
+  font-size: 15px;
+}
+
+/* optional smaller/colored location text */
+.location {
+  margin-left: 6px;
+  font-size: 14px;
+  color: #FDC101;
+  white-space: normal; /* allow location to wrap if it is very long */
+}
+
+/* spacing and layout for the paragraph */
+.timeline-paragraph {
+  display: flex;
+  flex-wrap: wrap; /* allow multiple inline-row groups to wrap as a whole */
+  gap: 10px 24px;
+  align-items: center;
+}
+
+/* keep the visit button aligned with items */
+.timeline-paragraph .visit {
+  margin-left: 8px;
+  padding: 6px 10px;
+  background: transparent;
+  border: 1px solid #FDC101;
+  color: #FDC101;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.timeline {
+  padding: 0px 5%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.timeline > .timeline-item {
+  display: flex;
+  align-items: flex-start;
+}
+.timeline > .timeline-item > div {
+  flex: 1;
+  padding: 20px 40px;
+}
+.timeline > .timeline-item > div:last-child {
+  text-align: left;
+  padding-bottom: 40px !important;
+}
+.timeline > .timeline-item > div:first-child::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FDC101;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px rgba(247, 182, 54, 0.2);
+}
+.timeline > .timeline-item:nth-child(odd) > div:first-child {
+  text-align: right;
+  position: relative;
+}
+.timeline > .timeline-item:nth-child(odd) > div:first-child::after {
+  right: -17px;
+}
+.timeline > .timeline-item:nth-child(odd) > div:last-child {
+  text-align: left;
+  border-left: 2px solid #e0e0e0;
+}
+.timeline > .timeline-item:nth-child(odd) > .timeline-date > div {
+  margin-right: 0px;
+}
+.timeline > .timeline-item:nth-child(odd) > .timeline-content > h2 {
+  text-align: left !important;
+  padding-bottom: 20px;
+}
+.timeline > .timeline-item:nth-child(even) > div:first-child {
+  order: 2;
+  text-align: left;
+  position: relative;
+  
+}
+.timeline > .timeline-item:nth-child(even) > div:first-child::after {
+  left: -1px;
+}
+.timeline > .timeline-item:nth-child(even) > div:last-child {
+  order: 1;
+  text-align: left;
+  border-right: 2px solid #e0e0e0;
+}
+.timeline > .timeline-item:nth-child(even) > .timeline-date > div {
+  margin-left: 0px;
+}
+.timeline > .timeline-item:nth-child(even) > .timeline-date > img {
+  left: 11%;
+  right: inherit;
+}
+.timeline > .timeline-item:nth-child(even) > .timeline-content > h2 {
+  text-align: right !important;
+  padding-bottom: 20px;
+}
+.timeline > .timeline-item:nth-child(even) > .timeline-content > p > img {
+  right: inherit;
+  left: 0;
+  transform-origin: bottom left;
+}
+.timeline > .timeline-item:nth-child(even) > .timeline-content > p > button {
+  right: inherit;
+  left: 15px;
+}
+.timeline > .timeline-item .timeline-date {
+  position: relative;
+}
+.timeline > .timeline-item .timeline-date > img {
+  position: absolute;
+  filter: grayscale(100%);
+  opacity: 0.06;
+  transform: scale(1.2);
+  transform-origin: center;
+  left: 11%;
+}
+.timeline > .timeline-item .timeline-date > div {
+  background-color: #FDC101;
+  border-radius: 50px;
+  color: #1E2329;
+  text-align: center;
+  max-width: max-content;
+  margin: auto;
+  padding: 10px 30px;
+}
+.timeline > .timeline-item .timeline-content .fa-icon {
+  font-size: 10;
+}
+.timeline > .timeline-item .timeline-content > h2 {
+  color: #FDC101;;
+  margin: 0px;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 7px;
+}
+.timeline > .timeline-item .timeline-content > h2 span {
+  color: #FDC101;
+  font-weight: bold;
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+.timeline > .timeline-item .timeline-content > p {
+  color:white;
+  font-size: 16px;
+  padding: 20px;
+  background-color: #2f3742;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  line-height: 35px;
+  padding-bottom: 60px;
+  min-height: 100px;
+}
+
+
+
+
+.timeline > .timeline-item .timeline-content > p > button {
+  background: no-repeat;
+  outline: none;
+  color: #FDC101;
+  border: none;
+  padding: 7px 15px;
+  position: absolute;
+  bottom: 15px;
+  border-radius: 30px;
+  left: 15px;
+  box-shadow: 0 0px 2px rgba(103, 58, 183, 0.1);
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  font-weight: normal;
+  transition: all 0.5s ease;
+}
+.timeline > .timeline-item .timeline-content > p > button:hover {
+  background: #FDC101;
+  color: #1E2329;
+  box-shadow: 0 5px 10px rgba(103, 58, 183, 0.1);
+
+}
+@media (max-width: 1000px) {
+  .timeline > .timeline-item {
+    flex-direction: column;
+    border-left: 2px solid #e0e0e0;
+  }
+  .timeline > .timeline-item .timeline-date > img {
+    display: none;
+  }
+  .timeline > .timeline-item > div {
+    border-width: 0px !important;
+    text-align: left !important;
+    order: unset !important;
+  }
+  .timeline > .timeline-item > div::after {
+    left: 0% !important;
+  }
+  .timeline > .timeline-item:nth-child(odd) > .timeline-content > h2 {
+    text-align: left !important;
+  }
+  .timeline > .timeline-item:nth-child(even) > .timeline-content > h2 {
+    text-align: left !important;
+  }
+  .timeline > .timeline-item:nth-child(even) > .timeline-content > p > img {
+    right: 0;
+    left: inherit;
+    transform-origin: bottom right;
+  }
+  .timeline > .timeline-item:nth-child(even) > .timeline-content > p > button {
+    left: 15px;
+    right: inherit;
+  }
+  .timeline > .timeline-item .timeline-content > p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* overall container spacing */
+  .timeline {
+    padding: 20px 4%;
+  }
+
+  /* stack item parts and reduce spacing */
+  .timeline > .timeline-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .timeline > .timeline-item > div {
+    padding: 12px 10px;
+  }
+
+  /* make card smaller and allow content to flow naturally */
+  .timeline > .timeline-item .timeline-content > p {
+    padding: 12px;
+    padding-bottom: 16px;
+    min-height: auto;
+    line-height: 1.4;
+    font-size: 14px;
+    border-radius: 8px;
+    word-break: break-word;
+  }
+
+  /* move the See more button into normal document flow */
+  .timeline > .timeline-item .timeline-content > p > button {
+    position: static;
+    display: inline-block;
+    margin-top: 10px;
+    left: auto;
+    bottom: auto;
+  }
+
+  /* allow icon+text groups to wrap as needed on very small screens */
+  .inline-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 10px;
+    white-space: normal; /* allow wrap if necessary */
+    flex-wrap: wrap;
+    vertical-align: middle;
+  }
+
+  .inline-text {
+    font-size: 13px;
+  }
+
+  /* shorten date badge and center it */
+  .timeline > .timeline-item .timeline-date > div {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* reduce h2 size */
+  .timeline > .timeline-item .timeline-content > h2 {
+    font-size: 1.1em;
+  }
+
+
+}

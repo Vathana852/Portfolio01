@@ -31,7 +31,7 @@ export default function Skills() {
   return (
     <section id="skills-section" className=" text-white ">
       
-      <p className="max-w-3xl mx-auto  text-gray-300 mb-10 text-justify">
+      <p className="about-text max-w-3xl mx-auto mb-10 text-justify">
         I am a graduate in Financial Technology from ACLEDA Institute of Business with strong expertise in Programming and IT support. 
         Throughout my academic journey, I have successfully completed multiple projects that showcase my technical skills and problem-solving abilities. 
         Additionally, I excel in collaboration and maintain strong relationships with peers and colleagues.
@@ -44,7 +44,7 @@ export default function Skills() {
               <span>{skill.name}</span>
               <span className="brand-color1">{skill.level}%</span>
             </div>
-            <div className="w-full bg-gray-700 rounded-full h-3">
+            <div className="skill-line w-full rounded-full h-3">
               <div
                 className="brand-bg1 h-3 rounded-full transition-all duration-[2000ms] ease-out"
                 style={{

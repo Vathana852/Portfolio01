@@ -1,0 +1,137 @@
+.education-subtitle{
+  font-size: 18px;
+  color: #FDC101;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.education-title{
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container_education{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.education_part{
+  width: 600px;
+}
+
+.education_part_header{
+  border: #2f3742 1px solid;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.education_part_right{
+
+  width: 600px;
+  border: #2f3742 1px solid;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.education_part_right h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0 0 10px 0;
+}
+
+
+
+
+.education_part_header h2{
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0 0 10px 0;
+}
+
+
+
+.education_part_header p{
+  font-size: 14px;
+  color: white;
+  padding: 0 0 10px 0;
+}
+.education_part_header a{
+  font-size: 12px;
+  text-decoration: none;
+  color: #FDC101;
+  border: #FDC101 1px solid;
+  border-radius: 24px;
+  padding: 10px 10px;
+  transition: 0.5s;
+}
+
+.education_part_header a:hover{
+  font-size: 14px;
+  background-color: #FDC101;
+  color: #1E2329;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+
+
+
+.technical_skill_items{
+  padding-top: 10px;
+  display: flex;
+
+}
+
+
+
+.technical_skill_items img{
+  width: 50px;
+  margin-right: 15px;
+}
+
+
+
+@media (max-width: 1000px) {
+  .container_education {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education_part {
+    width: 80%;
+    
+  }
+  .technical_skill_items img{
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .education_part_header {
+    margin: 0 0 20px 0;
+  }
+
+
+  .education_part_right {
+    width: 80%;
+    margin: 0 0 20px 0;
+  }
+  .education_part_right h2 {
+    font-size: 18px;
+  }
+  .education_part_header p {
+    font-size: 14px;
+  }
+
+
+}

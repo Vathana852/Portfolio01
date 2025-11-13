@@ -1,3 +1,14 @@
+.skillName{
+    color: #1e2329;
+}
+.about-text{
+    color: #1e2329;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.skill-line{
+    background-color: #d1d5db;
+}
 
 @media (max-width: 1536px) {
     .skillItem-Container{
@@ -5,6 +16,5 @@
     }
     .skillName{
        font-size: 80%;
-
     }
 }    

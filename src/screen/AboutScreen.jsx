@@ -5,7 +5,7 @@ import Skills from '../components/SkillProcess';
 import SkillItem from '../components/SkillItem'; // Import the SkillItem component
 import '../components/Animation.css'
 const AboutScreen = () => {
-  const skills = [
+  const skills = [  
     { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', name: 'HTML5' },
     { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', name: 'CSS3' },
     { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', name: 'JavaScript' },
@@ -21,10 +21,10 @@ const AboutScreen = () => {
   ];
 
   return (
-    <div className="container mx-auto autoShow">
-      <div className="flex flex-col md:flex-row gap-6">
+    <div className="about-container mx-auto" id="about">
+      <div className="flex flex-col md:flex-row justify-center gap-6">
           {/* Left Box */}
-        <div className="md:w-1/2 py-6 px-4 text-white ">
+        <div className="about-title w-full md:w-1/2 py-6 px-4">
             <h2 className="text-3xl font-bold text-center mb-6">
               ABOUT <span className="brand-color1">ME</span>
             </h2>
@@ -38,7 +38,7 @@ const AboutScreen = () => {
             </div>
         </div>
         {/* Right Box */}
-        <div className="md:w-1/2 p-4">
+        <div className="w-full md:w-1/2 p-4">
           <Skills />
         </div>
       </div>
