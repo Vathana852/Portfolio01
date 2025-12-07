@@ -26,7 +26,7 @@ const AboutScreen = () => {
           {/* Left Box */}
         <div className="about-title w-full md:w-1/2 py-6 px-4">
             <h2 className="text-3xl font-bold text-center mb-6">
-              ABOUT <span className="brand-color1">ME</span>
+              About <span className="brand-color1">Me</span>
             </h2>
 
             <div className="max-w-4xl mx-auto text-center">

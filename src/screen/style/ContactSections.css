@@ -1,0 +1,27 @@
+.ContactFormLeft{
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.ContactScreenContainer h2{
+    color: #2f3742;
+}
+.ContactScreenContainer h2 span{
+    color: #FDC101;
+}
+.btnSubmit{
+    color: #ffffff;
+    background-color: #FDC101;
+}
+.btnSubmit:hover{
+    background-color: #d4a007;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.contactBox{
+    border: 1px solid #E0E0E0;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+}
+.contactBox:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}

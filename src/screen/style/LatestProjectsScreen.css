@@ -1,0 +1,43 @@
+.mainTitle{
+    color: #243037;
+}
+.mainTitle span {
+    color: #FDC101;
+}
+
+.categoryBtn { display:flex; gap:0.75rem; flex-wrap:wrap; justify-content:center; }
+
+.categoryBtn .category-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148,163,184,0.6); /* gray-600 */
+  color: #D1D5DB; /* gray-300 */
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  font-weight: 500;
+}
+
+.categoryBtn .category-btn:hover,
+.categoryBtn .category-btn:focus {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+/* active state using aria-pressed */
+.categoryBtn .category-btn[aria-pressed="true"] {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+  box-shadow: 0 6px 6px rgba(15,26,44,0.20);
+}
+
+/* optional: smaller screens tweak */
+@media (max-width: 420px) {
+  .categoryBtn .category-btn { padding: 0.4rem 1rem; font-size: 0.9rem; }
+}
+
+/* ...existing code... */

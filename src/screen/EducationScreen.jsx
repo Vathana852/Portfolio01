@@ -25,8 +25,8 @@ const Education = () => {
   return (
     <section id="education" className="education_header">
 
-        <h2 className='education-subtitle'>My Special <span>Experience</span></h2>
-        <h1 className='education-title'>For your <span>Business Development</span> </h1>
+        <h2 className='education-subtitle'>My <span>Education</span></h2>
+        <h1 className='education-title'>Education <span>Journey</span> </h1>
 
       <div className="container_education">
         {/* Left Section */}

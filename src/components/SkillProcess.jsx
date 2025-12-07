@@ -37,7 +37,7 @@ export default function Skills() {
         Additionally, I excel in collaboration and maintain strong relationships with peers and colleagues.
       </p>
 
-      <div className="space-y-4 max-w-3xl skills-container mx-auto">
+      <div className="skill-process-title space-y-4 max-w-3xl skills-container mx-auto">
         {skills.map((skill, index) => (
           <div key={index}>
             <div className="flex justify-between mb-1">

@@ -94,6 +94,12 @@ body {
 }
 
 
+.menu-link.active {
+  color: #ffb703;
+}
+
+
+
 /* Tablet MENU TRANSITION */
 @media (max-width: 800px) {
 

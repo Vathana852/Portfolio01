@@ -1,3 +1,6 @@
+import tailwindcss from '@tailwindcss/vite';
+import autoprefixer from 'autoprefixer';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,7 +8,14 @@ export default {
     "./src/screen/*.{js,jsx,ts,tsx}",  // important so your HomeScreen.jsx is scanned
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#243037", 
+        secondary: "#FDC101",
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    tailwindcss,
+  ],
 }

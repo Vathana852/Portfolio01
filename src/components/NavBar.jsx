@@ -46,7 +46,6 @@ const NavBar = (props) => {
               {props.children}
             </ul>
           </div>
-        
 
         </div>
       </nav>

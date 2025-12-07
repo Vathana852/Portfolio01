@@ -33,7 +33,7 @@ padding: 50px 0 50px 0;
 }
 
 .inline-text {
-  color: #ffffff; /* adjust as needed */
+  color: #243037; /* adjust as needed */
   font-size: 15px;
 }
 
@@ -156,9 +156,10 @@ padding: 50px 0 50px 0;
   left: 11%;
 }
 .timeline > .timeline-item .timeline-date > div {
-  background-color: #FDC101;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border-radius: 50px;
-  color: #1E2329;
+  color: #9b9b9b;
   text-align: center;
   max-width: max-content;
   margin: auto;
@@ -168,10 +169,9 @@ padding: 50px 0 50px 0;
   font-size: 10;
 }
 .timeline > .timeline-item .timeline-content > h2 {
-  color: #FDC101;;
+  color: #243037;;
   margin: 0px;
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.2em;
   margin-top: 7px;
 }
 .timeline > .timeline-item .timeline-content > h2 span {
@@ -182,12 +182,11 @@ padding: 50px 0 50px 0;
   margin-left: 5px;
 }
 .timeline > .timeline-item .timeline-content > p {
-  color:white;
   font-size: 16px;
   padding: 20px;
-  background-color: #2f3742;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   position: relative;
   line-height: 35px;
   padding-bottom: 60px;
@@ -200,14 +199,13 @@ padding: 50px 0 50px 0;
 .timeline > .timeline-item .timeline-content > p > button {
   background: no-repeat;
   outline: none;
-  color: #FDC101;
+  color: #9b9b9b;
   border: none;
   padding: 7px 15px;
   position: absolute;
   bottom: 15px;
-  border-radius: 30px;
+  border-radius: 34px;
   left: 15px;
-  box-shadow: 0 0px 2px rgba(103, 58, 183, 0.1);
   cursor: pointer;
   letter-spacing: 1px;
   font-size: 0.9em;
@@ -215,8 +213,7 @@ padding: 50px 0 50px 0;
   transition: all 0.5s ease;
 }
 .timeline > .timeline-item .timeline-content > p > button:hover {
-  background: #FDC101;
-  color: #1E2329;
+
   box-shadow: 0 5px 10px rgba(103, 58, 183, 0.1);
 
 }

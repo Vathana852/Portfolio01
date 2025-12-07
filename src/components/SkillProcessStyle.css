@@ -13,6 +13,9 @@
 .skills-container{
   max-width: none !important;
 }
+.skill-process-title{
+  color: #2f3742;
+}
 
 .brand-color1 {
   color: var(--brand-color1);
