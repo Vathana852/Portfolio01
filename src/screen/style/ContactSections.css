@@ -25,3 +25,15 @@
 .contactBox:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
+
+
+
+@media (max-width: 880px){
+    .contactBox span{
+        font-size: 8px;
+        top: 0;
+        right: 0;
+    }
+        
+
+}

@@ -31,10 +31,11 @@ export default function Skills() {
   return (
     <section id="skills-section" className=" text-white ">
       
-      <p className="about-text max-w-3xl mx-auto mb-10 text-justify">
-        I am a graduate in Financial Technology from ACLEDA Institute of Business with strong expertise in Programming and IT support. 
-        Throughout my academic journey, I have successfully completed multiple projects that showcase my technical skills and problem-solving abilities. 
-        Additionally, I excel in collaboration and maintain strong relationships with peers and colleagues.
+      <p className="about-text max-w-3xl mx-auto mb-10 text-justify " style={{ fontSize: "16px" }}>
+        Creative UI/UX Designer and Frontend Developer with a strong background in FinTech and over two years of professional
+        experience in graphic design, video editing, and visual communication. Skilled in designing user-centered digital
+        experiences and developing responsive web interfaces. Successfully built and deployed my own portfolio website
+        using modern web technologies. Seeking to contribute my UI/UX and frontend skills.
       </p>
 
       <div className="skill-process-title space-y-4 max-w-3xl skills-container mx-auto">

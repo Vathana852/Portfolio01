@@ -2,7 +2,6 @@
 :root {
   --brand-color1: #ffb703;
 }
-
 .container {
   @apply mx-auto px-4; /* Keep horizontal padding and centering */
   padding-top: 20px;
@@ -24,4 +23,3 @@
 .brand-bg1{
     background-color: var(--brand-color1);
 }
-

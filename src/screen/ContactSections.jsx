@@ -186,26 +186,24 @@ export default function ContactSection() {
                 +855 966 807 610
               </h2>
             </div>
-                        <div className="contactBox rounded-2xl h-18 flex items-center gap-3 relative">
-              <span className="absolute top-2 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
-                Fast Respone
-              </span>
-              <h2 className="text-lg flex items-center gap-3">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.9468 2.76793C18.9499 2.58949 19.933 2.61446 20.6592 3.34071C21.3855 4.06697 21.4104 5.05005 21.232 6.05313C21.055 7.04811 20.6261 8.33483 20.0931 9.93361L18.3147 15.2689C17.7296 17.0242 17.2619 18.4275 16.7732 19.4017C16.2866 20.3717 15.6399 21.2031 14.5608 21.313C13.4818 21.4229 12.6807 20.739 12.0085 19.8871C11.3334 19.0314 10.5923 17.7513 9.66527 16.15L9.42719 15.7388C9.42289 15.7314 9.41864 15.7241 9.41444 15.7168L13.8977 11.2335C14.2101 10.9211 14.2101 10.4146 13.8977 10.1022C13.5853 9.78974 13.0788 9.78974 12.7663 10.1022L8.28306 14.5854C8.27583 14.5813 8.26853 14.577 8.26114 14.5728L7.8498 14.3346C6.24859 13.4076 4.96851 12.6665 4.11282 11.9914C3.26091 11.3193 2.577 10.5182 2.68693 9.43911C2.79685 8.36004 3.62825 7.71332 4.59821 7.22677C5.57247 6.73805 6.97573 6.27032 8.73102 5.68525L14.0663 3.90681C15.6651 3.37385 16.9518 2.94493 17.9468 2.76793Z" fill="black" class="my-path"></path>
-                </svg>
-                @vathanayon 
-                <a
-                  href="https://t.me/yonvathana"
-                  className="telegram-link text-s opacity-30 hover:opacity-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  (Telegram username)
-                </a>
-              </h2>
+              <div className="contactBox rounded-2xl h-18 flex items-center gap-3 relative">
+                <span className="fast-respone absolute top-2 right-3 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                  Fast Respone
+                </span>
+                <h2 className="text-lg flex items-center gap-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.9468 2.76793C18.9499 2.58949 19.933 2.61446 20.6592 3.34071C21.3855 4.06697 21.4104 5.05005 21.232 6.05313C21.055 7.04811 20.6261 8.33483 20.0931 9.93361L18.3147 15.2689C17.7296 17.0242 17.2619 18.4275 16.7732 19.4017C16.2866 20.3717 15.6399 21.2031 14.5608 21.313C13.4818 21.4229 12.6807 20.739 12.0085 19.8871C11.3334 19.0314 10.5923 17.7513 9.66527 16.15L9.42719 15.7388C9.42289 15.7314 9.41864 15.7241 9.41444 15.7168L13.8977 11.2335C14.2101 10.9211 14.2101 10.4146 13.8977 10.1022C13.5853 9.78974 13.0788 9.78974 12.7663 10.1022L8.28306 14.5854C8.27583 14.5813 8.26853 14.577 8.26114 14.5728L7.8498 14.3346C6.24859 13.4076 4.96851 12.6665 4.11282 11.9914C3.26091 11.3193 2.577 10.5182 2.68693 9.43911C2.79685 8.36004 3.62825 7.71332 4.59821 7.22677C5.57247 6.73805 6.97573 6.27032 8.73102 5.68525L14.0663 3.90681C15.6651 3.37385 16.9518 2.94493 17.9468 2.76793Z" fill="black" class="my-path"></path>
+                  </svg>
+                  @vathanayon 
+                  <a
+                    href="https://t.me/yonvathana"
+                    className="telegram-link text-s opacity-30 hover:opacity-100"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                  </a>
+                </h2>
             </div>
-
           </div>
         </div>
 

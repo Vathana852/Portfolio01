@@ -15,41 +15,19 @@ const categories = [
 
 const projects = [
   {
-    title: "Flyer design",
-    img: "https://i.pinimg.com/736x/10/6b/6a/106b6a3252c9cad8453dbafb7b300947.jpg",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    category: "Graphic Design",
-  },
-  {
     title: "Banner design",
     img: wb01,
     desc: "UX UI design AWS challenge.",
     category: "Web Design",
   },
+  
   {
-    title: "Disk cover",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    category: "Other",
-  },
-  {
-    title: "Pattern design",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Flyer design",
+    img: "https://i.pinimg.com/736x/10/6b/6a/106b6a3252c9cad8453dbafb7b300947.jpg",
+    desc: "Anther project will upload soon.",
     category: "Graphic Design",
   },
-  {
-    title: "Logo design",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    category: "Web Development",
-  },
-  {
-    title: "Animal pattern",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    category: "Graphic Design",
-  },
+  
 ];
 
 export default function LatestProjects() {
