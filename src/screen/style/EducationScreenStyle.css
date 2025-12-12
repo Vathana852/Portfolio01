@@ -35,7 +35,14 @@
   padding: 20px;
   margin-bottom: 20px;
   margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
 }
+
+.education_part_header:hover{
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
 
 .education_part_right{
 
@@ -45,6 +52,11 @@
   padding: 20px;
   margin-bottom: 20px;
   margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.education_part_right:hover{
+  transform: translateY(-10px);
+  transition: 0.3s;
 }
 
 .education_part_right h2{
@@ -120,7 +132,7 @@
   }
 
   .education_part {
-    width: 80%;
+    width: 100%;
     
   }
   .technical_skill_items img{
@@ -134,7 +146,7 @@
 
 
   .education_part_right {
-    width: 80%;
+    width: 100%;
     margin: 0 0 20px 0;
   }
   .education_part_right h2 {

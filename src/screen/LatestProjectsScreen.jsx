@@ -39,7 +39,7 @@ export default function LatestProjects() {
       : projects.filter((p) => p.category === selectedCategory);
 
   return (
-    <div className=" min-h-screen text-white py-8 px-6" id="LatestProject">
+    <div className=" text-white py-4 px-6" id="LatestProject">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="mainTitle text-4xl font-bold mb-3">My <span>Latest</span> Projects</h2>
         <p className="text-gray-400 max-w-xl mx-auto mb-8">
@@ -71,7 +71,7 @@ export default function LatestProjects() {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-80  transform transition duration-300 ease-out group-hover:scale-105"
+                className="w-full h-100  transform transition duration-300 ease-out group-hover:scale-105"
               />
               <div className="p-5">
                 <p className="text-gray-400 text-sm transform transition duration-300 ease-out group-hover:scale-105" >{project.desc}</p>
