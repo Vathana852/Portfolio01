@@ -1,6 +1,6 @@
 import React from 'react'
 import'./style/HomeScreenStyle.css'
-import heroImage from '../assets/HeroImage01.JPG'
+import heroImage from '../assets/Heroimage01.JPG'
 import TypingLoop from '../components/TypingLoop'
 import '../components/Animation.css'
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from "react";
-import './style/NavbarStyle.css'
+import './style/NavbarStyle.css';
 import logo from '../assets/logo/Vath-Logo-Version2.png'
 
 const designCode = logo;

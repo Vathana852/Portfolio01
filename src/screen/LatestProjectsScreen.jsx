@@ -71,7 +71,7 @@ export default function LatestProjects() {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-100  transform transition duration-300 ease-out group-hover:scale-105"
+                className="w-full h-100 transform transition duration-300 ease-out group-hover:scale-105"
               />
               <div className="p-5">
                 <p className="text-gray-400 text-sm transform transition duration-300 ease-out group-hover:scale-105" >{project.desc}</p>

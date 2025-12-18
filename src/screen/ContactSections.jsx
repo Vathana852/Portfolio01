@@ -61,7 +61,7 @@ export default function ContactSection() {
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
 
         {/* LEFT: Contact Form */}
-        <div className="ContactFormLeft flex items-center justify-center bg-white/5 min-h-[650px] flex∆">
+        <div className="ContactFormLeft flex items-center justify-center bg-white/5 min-h-[650px] p-6">
 
           <form onSubmit={handleSubmit}>
 
