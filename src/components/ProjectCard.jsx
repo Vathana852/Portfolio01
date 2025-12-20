@@ -1,3 +1,6 @@
+
+
+
 export default function ProjectCard({ project }) {
   return (
     <div className="group rounded-2xl overflow-hidden bg-[#0b1d33] border border-white/10 hover:border-blue-500/40 transition">

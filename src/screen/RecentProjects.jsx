@@ -3,7 +3,7 @@ import { projects } from "../components/projects";
 
 export default function RecentProjects() {
   return (
-    <section className="bg-[#07162b] py-20">
+    <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Title */}
