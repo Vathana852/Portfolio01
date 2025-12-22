@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 
+import FloatingChat from './components/FloatingChat.jsx'
 import MainScreen from './screen/MainScreen.jsx'
 import HomeScreen from './screen/HomeScreen.jsx'
 import AboutScreen from './screen/AboutScreen.jsx'
@@ -8,6 +9,7 @@ import ExperienceScreen from './screen/ExperienceScreen.jsx'
 import LatestProjects from './screen/LatestProjectsScreen.jsx'
 import ContactSection from './screen/ContactSections.jsx'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+
 
 
 function ScrollToTop() {

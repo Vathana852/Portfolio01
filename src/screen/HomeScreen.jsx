@@ -17,12 +17,12 @@ const HomeScreen = () => {
 
   const imageTop = heroImage;
   return (
-    <div className=" homescreen-container mx-auto px-4 py-8 autoShow " id="home">
+    <div className=" homescreen-container mx-auto px-4 py-8 autoShow " id="home" >
       <div className="homescreen-inner">
           <div className="custom-left flex justify-center items-center flex-col md:flex-row md:space-x-8">
             {/* Left Section */}
             
-              <div className=" flex flex-col justify-center md:w-1/2">
+              <div className=" flex flex-col justify-center md:w-1/2" data-aos="fade-right">
                 <div className="text-section custom-box px-6">
                   <h5 className="intro-text">I'am</h5>
                   <h1 className="name">YON VATHANA</h1>
@@ -88,7 +88,7 @@ const HomeScreen = () => {
             {/* Right Section */}
 
 
-            <div className="custom-right ">
+            <div className="custom-right " data-aos="fade-left">
                 <img 
                   className='rounded-lg w-full h-auto'
                   src={heroImage} alt="about hero" 

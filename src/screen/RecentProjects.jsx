@@ -1,18 +1,19 @@
 import ProjectCard from "../components/ProjectCard";
 import { projects } from "../components/projects";
+import "./style/RecentProjectsStyle.css";
 
 export default function RecentProjects() {
   return (
-    <section className="py-20">
+    <section className="py-2" id="LatestProject">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Title */}
-        <div className="mb-12">
-          <p className="text-blue-400 text-sm mb-2">
+        <div className="RecentProjects mb-18">
+          <p className="RecentProjects-subtitle text-lg text-gray-400 mb-2">
             My Work
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Recent Project
+          <h2 className="RecentProjects-title text-4xl font-bold mb-3">
+            Recent <span>Project</span>
           </h2>
         </div>
 

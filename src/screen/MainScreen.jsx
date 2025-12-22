@@ -11,6 +11,8 @@ import ContactSection from './ContactSections.jsx'
 import Footer from './footer.jsx'
 import Navbar from './Navbar.jsx'
 
+import FloatingChat from '../components/FloatingChat.jsx'
+
 const MainScreen = () => {
   return (
     <div className='mainScreenContainer'>
@@ -24,6 +26,7 @@ const MainScreen = () => {
         {/* <LatestProjects /> */}
         <ContactSection />
         <Footer />
+        <FloatingChat />
     </div>
   )
 }

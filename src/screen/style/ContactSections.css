@@ -11,10 +11,12 @@
 .btnSubmit{
     color: #ffffff;
     background-color: #FDC101;
+    transition: transform 0.3s ease-in-out;
 }
 .btnSubmit:hover{
-    background-color: #d4a007;
+    
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);    
 }
 .contactBox{
     border: 1px solid #E0E0E0;

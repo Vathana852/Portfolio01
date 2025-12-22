@@ -47,7 +47,7 @@ const Education = () => {
           </div>
 
           {/* Technical Skill */}
-          <div className="education_part_header">
+          <div className="education_part_header" >
             <h2>Technical Skill</h2>
             <div className="technical_skill_items">
               <img src={htmlIcon} alt="HTML" />

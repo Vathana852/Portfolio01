@@ -50,7 +50,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="px-6 py-24 sm:py-10 lg:px-8" id="ContactSections">
+    <div className="px-6 py-24 sm:py-24 lg:px-8" id="ContactSections">
       <div className="ContactScreenContainer mx-auto max-w-2xl text-center">
         <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
           Contact <span>Me</span>
