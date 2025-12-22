@@ -11,8 +11,6 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 
-
-
 const HomeScreen = () => {
 
   const imageTop = heroImage;
@@ -29,6 +27,8 @@ const HomeScreen = () => {
                   <TypingLoop words={["Developer", "Designer", "Programmer"]} />
                 </div>
 
+
+                
                 <div className="button-group mt-6 flex justify-center">
                   <button
                     onClick={() =>

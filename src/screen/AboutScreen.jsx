@@ -4,6 +4,9 @@ import '../components/Responsive.css'
 import Skills from '../components/SkillProcess';
 import SkillItem from '../components/SkillItem'; // Import the SkillItem component
 import '../components/Animation.css'
+
+
+import { motion } from "framer-motion";
 const AboutScreen = () => {
   const skills = [  
     { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', name: 'HTML5' },
@@ -24,7 +27,13 @@ const AboutScreen = () => {
     <div className="about-container mx-auto" id="about">
       <div className="flex flex-col md:flex-row justify-center gap-6">
           {/* Left Box */}
-        <div className="about-title w-full md:w-1/2 py-6 px-4">
+        <motion.div className="about-title w-full md:w-1/2 py-6 px-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+
+        >
             <h2 className="text-3xl font-bold text-center mb-6">
               About <span className="brand-color1">Me</span>
             </h2>
@@ -36,11 +45,16 @@ const AboutScreen = () => {
                 ))}
               </div>
             </div>
-        </div>
+        </motion.div>
         {/* Right Box */}
-        <div className="w-full md:w-1/2 p-4">
+        <motion.div className="w-full md:w-1/2 p-4"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+        >
           <Skills />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
